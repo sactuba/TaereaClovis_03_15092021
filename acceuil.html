@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="FontAnswome/css/all.css" rel="stylesheet">
+    <link href="FontAnswome/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href=".public/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <title>ohmyfood</title>
   </head>
   <body>
     <div class="container">
-                              
-                              <!--  HEADER -->
+      <!--  HEADER -->
       <header class="header">
         <img class="logo" src="images/logo/ohmyfood.png" alt="" />
       </header>
 
-      <container class="main">
-
+      <div class="main">
         <section class="search-restaurant">
-          <div class="localisation"><i class="fas fa-map-marker-alt"></i>Paris,Belleville</div>
+          <div class="localisation">
+            <i class="fas fa-map-marker-alt"></i>Paris,Belleville
+          </div>
           <h1>Réserver le menu qui vous convient</h1>
           <p>
             Découvrer des restaurants d'éxception, séléctionnés par nos soins.
@@ -30,111 +33,101 @@
           <button class="btn-search">Explorer nos restaurants</button>
         </section>
 
-                              <!--  ASIDE FONCTIONNEMENT -->
+        <!--  ASIDE FONCTIONNEMENT -->
 
-      <section class="fonctionnement">
-        <h3>Fonctionnement</h3>
+        <section class="fonctionnement">
+          <h3>Fonctionnement</h3>
 
-        <ol class="liste-fonctionnement">
+          <ol class="liste-fonctionnement">
+            <li>
+              <fieldset class="step">
+                <legend>1</legend>
+                <p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+              </fieldset>
+            </li>
 
-          <li>
-        <fieldset class="step">
-          <legend>1</legend>
-          <p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
-        </fieldset>
-      </li>
+            <li>
+              <fieldset class="step">
+                <legend>2</legend>
+                <p><i class="fas fa-list-ul"></i>Composez votre menu</p>
+              </fieldset>
+            </li>
 
-      <li>
-        <fieldset class="step">
-          <legend>2</legend>
-          <p><i class="fas fa-list-ul"></i>Composez votre menu</p>
-        </fieldset>
-      </li>
+            <li>
+              <fieldset class="step">
+                <legend>3</legend>
+                <p><i class="fas fa-utensils"></i>Dégustez au restaurant</p>
+              </fieldset>
+            </li>
+          </ol>
+        </section>
 
-      <li>
-        <fieldset class="step">
-          <legend>3</legend>
-          <p><i class="fas fa-utensils"></i>Dégustez au restaurant</p>
-        </fieldset>
-      </li>
+        <section class="restaurant">
+          <h3>Restaurants</h3>
 
-      </ol>
+          <ul class="liste-restaurant">
+            <li class="li-restaurant">
+              <a href="">
+                <figure class="card-restaurant">
+                  <img src="images/restaurants/La palette du goût.jpg" alt="" />
+                  <figcaption>
+                    <h2>La palette de goût</h2>
+                    <p>Ménilmontant</p>
+                  </figcaption>
+                </figure>
+                <span>nouveau</span>
+              </a>
+            </li>
 
-      </section>
+            <li class="li-restaurant">
+              <a href="">
+                <figure class="card-restaurant">
+                  <img src="images/restaurants/La note enchantée.jpg" alt="" />
+                  <figcaption>
+                    <h2>La note anchantée</h2>
+                    <p>Charonne</p>
+                  </figcaption>
+                </figure>
+                <span>nouveau</span>
+              </a>
+            </li>
 
-      <section class="restaurant">
-        
-        <h3>Restaurants</h3>
+            <li class="li-restaurant">
+              <a href="">
+                <figure class="card-restaurant">
+                  <img src="images/restaurants/La francaise.jpg" alt="" />
+                  <figcaption>
+                    <h2>A la francaise</h2>
+                    <p>Cité Rouge</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-        <ul class="liste-restaurant">
+            <li class="li-restaurant">
+              <a href="">
+                <figure class="card-restaurant">
+                  <img src="images/restaurants/Le délice des sens.jpg" alt="" />
+                  <figcaption>
+                    <h2>Le délices des sens</h2>
+                    <p>Folie-Méricourt</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-          <li class="li-restaurant">
-            <a href="">
-            <figure class="card-restaurant">
-              <img src="images/restaurants/La palette du goût.jpg" alt="">
-              <figcaption>
-                <h2>La palette de goût</h2>
-                <p>Ménilmontant</p>
-              </figcaption>
-            </figure>
-            <span>nouveau</span>
-          </a>
-          </li>
-
-          <li class="li-restaurant">
-            <a href="">
-            <figure class="card-restaurant">
-              <img src="images/restaurants/La note enchantée.jpg" alt="">
-              <figcaption>
-                <h2>La note anchantée</h2>
-                <p>Charonne</p>
-              </figcaption>
-            </figure>
-            <span>nouveau</span>
-          </a>
-          </li>
-
-          <li class="li-restaurant">
-            <a href="">
-            <figure class="card-restaurant">
-              <img src="images/restaurants/La francaise.jpg" alt="">
-              <figcaption>
-                <h2>A la francaise</h2>
-                <p>Cité Rouge</p>
-              </figcaption>
-            </figure>
-          </a>
-          </li>
-
-          <li class="li-restaurant">
-            <a href="">
-            <figure class="card-restaurant">
-              <img src="images/restaurants/Le délice des sens.jpg" alt="">
-              <figcaption>
-                <h2>Le délices des sens</h2>
-                <p>Folie-Méricourt</p>
-              </figcaption>
-            </figure>
-          </a>
-          </li>
-
-        </ul>
-
-      </section>
-
-      <footer class="footer">
-        <img src="images/logo/ohmyfood.png" alt="">
-        <ul>
-          <li>Proposer un restaurant</li>
-          <li>Devenir partenaire</li>
-          <li>Mention légales</li>
-          <li>contact</li>
-        </ul>
-      </footer>
-
-      </container>
-       
-      </header>
+        <footer class="footer">
+          <img src="images/logo/ohmyfood.png" alt="" />
+          <ul>
+            <li>Proposer un restaurant</li>
+            <li>Devenir partenaire</li>
+            <li>Mention légales</li>
+            <li>contact</li>
+          </ul>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
