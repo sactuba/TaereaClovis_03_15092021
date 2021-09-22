@@ -20,27 +20,47 @@ img {
   object-fit: cover;
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
 .btn-search {
-  height: 40px;
-  width: 180px;
+  height: 45px;
+  width: 185px;
   align-self: center;
   border: none;
   border-radius: 25px;
   text-decoration: none;
+  color: #fff;
+  background-color: #9356dc;
 }
 
-.localisation {
+.search-restaurant {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+.search-restaurant .localisation {
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: gainsboro;
 }
-
-.search-restaurant {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.search-restaurant h2 {
+  width: 80%;
+  align-self: center;
+  text-align: center;
+}
+.search-restaurant p {
+  text-align: center;
 }
 
 .fonctionnement {
@@ -48,8 +68,15 @@ img {
 }
 .fonctionnement .liste-fonctionnement {
   display: flex;
+  row-gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+.fonctionnement .liste-fonctionnement li::marker {
+  width: 2rem;
+  height: 2rem;
+  /* color: #fff; */
+  background: #9356dc;
 }
 .fonctionnement .liste-fonctionnement li {
   width: 90%;
@@ -57,15 +84,19 @@ img {
 .fonctionnement .liste-fonctionnement li fieldset {
   text-align: center;
 }
-
-.step {
+.fonctionnement .liste-fonctionnement li .step {
   height: 65px;
   border-radius: 12px;
   text-align: center;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.restaurant {
+  background-color: #f9f9f9;
 }
 
 .liste-restaurant {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,8 +107,9 @@ img {
   margin-bottom: 50px;
 }
 .li-restaurant .card-restaurant {
-  height: 180px;
+  height: 170px;
   width: 100%;
+  position: relative;
 }
 .li-restaurant .card-restaurant img {
   height: 80%;
@@ -85,7 +117,10 @@ img {
   border-radius: 15px 15px 0 0;
 }
 .li-restaurant .card-restaurant figcaption {
+  padding: 10px;
+  height: 65px;
   background-color: #fff;
+  border-radius: 0 0 15px 15px;
 }
 
 .header {
@@ -101,10 +136,18 @@ img {
 
 .footer {
   width: 100%;
+  padding: 20px;
   background-color: grey;
 }
 .footer img {
   width: 100px;
+  margin-bottom: 15px;
+}
+.footer .liste-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

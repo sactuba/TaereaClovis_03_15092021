@@ -19,3 +19,11 @@ ul {
 img {
   object-fit: cover;
 }
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: none;
+}

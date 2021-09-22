@@ -1,40 +1,64 @@
-.localisation {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: gainsboro;
-}
-
 .search-restaurant {
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
   justify-content: center;
+  background-color: $light-grey;
+  .localisation {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+  }
+  h2 {
+    width: 80%;
+    align-self: center;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 }
 
 .fonctionnement {
   padding: 30px 10px;
   .liste-fonctionnement {
     display: flex;
+    row-gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    li::marker {
+      width: 2rem;
+      height: 2rem;
+      /* color: #fff; */
+      background: $primary-color;
+    }
     li {
       width: 90%;
       fieldset {
         text-align: center;
       }
+      .step {
+        height: 65px;
+        border-radius: 12px;
+        text-align: center;
+        position: relative;
+        background-color: $light-grey;
+        p {
+        }
+      }
     }
   }
 }
 
-.step {
-  height: 65px;
-  border-radius: 12px;
-  text-align: center;
+.restaurant {
+  background-color: $light-grey;
 }
 
 .liste-restaurant {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,15 +68,19 @@
   width: 90%;
   margin-bottom: 50px;
   .card-restaurant {
-    height: 180px;
+    height: 170px;
     width: 100%;
+    position: relative;
     img {
       height: 80%;
       width: 100%;
       border-radius: 15px 15px 0 0;
     }
     figcaption {
+      padding: 10px;
+      height: 65px;
       background-color: #fff;
+      border-radius: 0 0 15px 15px;
     }
   }
 }
