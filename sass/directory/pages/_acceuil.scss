@@ -1,0 +1,58 @@
+.localisation {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+}
+
+.search-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fonctionnement {
+  padding: 30px 10px;
+  .liste-fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      width: 90%;
+      fieldset {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.step {
+  height: 65px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.liste-restaurant {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.li-restaurant {
+  width: 90%;
+  margin-bottom: 50px;
+  .card-restaurant {
+    height: 180px;
+    width: 100%;
+    img {
+      height: 80%;
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+    figcaption {
+      background-color: #fff;
+    }
+  }
+}

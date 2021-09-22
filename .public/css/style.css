@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  min-width: 320px;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+.btn-search {
+  height: 40px;
+  width: 180px;
+  align-self: center;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.localisation {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+}
+
+.search-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fonctionnement {
+  padding: 30px 10px;
+}
+.fonctionnement .liste-fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fonctionnement .liste-fonctionnement li {
+  width: 90%;
+}
+.fonctionnement .liste-fonctionnement li fieldset {
+  text-align: center;
+}
+
+.step {
+  height: 65px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.liste-restaurant {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.li-restaurant {
+  width: 90%;
+  margin-bottom: 50px;
+}
+.li-restaurant .card-restaurant {
+  height: 180px;
+  width: 100%;
+}
+.li-restaurant .card-restaurant img {
+  height: 80%;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.li-restaurant .card-restaurant figcaption {
+  background-color: #fff;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header .logo {
+  width: 10em;
+  margin: 20px auto;
+  align-self: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: grey;
+}
+.footer img {
+  width: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
