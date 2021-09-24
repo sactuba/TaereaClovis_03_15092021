@@ -4,108 +4,165 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
-    <title>La note enchantée</title>
+    <link href="/FontAnswome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/.public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>A la francaise</title>
   </head>
   <body>
-    <header>
-      <img src="/images/logo/ohmyfood.png " alt="" />
-    </header>
+    <div class="container">
+      <header class="header">
+        <a href="/acceuil.html"><i class="fas fa-arrow-left"></i></a>
+        <img
+          class="logo logo--restaurant"
+          src="/images/logo/ohmyfood.png"
+          alt=""
+        />
+      </header>
 
-    <container class="main">
-      <section class="menu-main">
-        <h1>La note enchantée</h1>
-
-        <article class="article-menu">
-          <h3></h3>
-          <ul>
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article class="article-menu">
-          <h3></h3>
-          <ul>
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article class="article-menu">
-          <h3></h3>
-          <ul>
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <button class="commander">comander</button>
+      <section class="image-menu">
+        <img src="/images/restaurants/La note enchantée.jpg" alt="" />
       </section>
 
-      <footer>
+      <section class="menu-main">
+        <h1>
+          La note enchantée
+        </h1>
+
+        <form action="" method="get">
+          <article class="article-menu">
+            <h3>ENTREES</h3>
+            <ul class="liste-menu">
+              <li>
+                <fieldset class="menu">
+                  <h4>Ravioles de foi gras</h4>
+                  <p>Accompgnésde leur crème à la truffe<span>25€</span></p>
+                  <button class="btn-menu btn-menu__overlay">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+
+              <li>
+                <fieldset class="menu">
+                  <h4>Caviar osciètre</h4>
+                  <p>Sur blinis à la farine de blé noir<span>35€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+
+              <li>
+                <fieldset class="menu">
+                  <h4>Homard et espuma de...</h4>
+                  <p>Mariné aux zests d'orange<span>20€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+
+                <li>
+                  <fieldset class="menu">
+                    <h4>Foie gras de cannard cuit entier</h4>
+                    <p>Confiture de figue et pain toasté<span>35€</span></p>
+                    <button class="btn-menu">
+                      <i class="fas fa-check-circle"></i>
+                    </button>
+                  </fieldset>
+                </li>
+              </li>
+            </ul>
+          </article>
+
+          <article class="article-menu">
+            <h3>PLATS</h3>
+            <ul class="liste-menu">
+              <li>
+                <fieldset class="menu">
+                  <h4>Noix de coquilles Saint-Jacques</h4>
+                  <p>Sur lit de purée de céleri-rave<span>40€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+
+              <li>
+                <fieldset class="menu">
+                  <h4>Langoustine poêlée</h4>
+                  <p>Purée de patate douce<span>35€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+
+              <li>
+                <fieldset class="menu">
+                  <h4>Mijoté de queu de boeuf</h4>
+                  <p>Et riz sauvage aux zestz de citron<span>44€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+            </ul>
+          </article>
+
+          <article class="article-menu">
+            <h3>DESSERTS</h3>
+            <ul class="liste-menu">
+              <li>
+                <fieldset class="menu">
+                  <h4>Macaron noisettes et chocaolat</h4>
+                  <p>Glace au caramel brun et sel de Guérande<span>18€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+
+              <li>
+                <fieldset class="menu">
+                  <h4>Baba au rhum revisité</h4>
+                  <p>Avec son couis de citron<span>22€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+
+              <li>
+                <fieldset class="menu">
+                  <h4>Tarte au citron meringuée</h4>
+                  <p>Destructuée<span>23€</span></p>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle"></i>
+                  </button>
+                </fieldset>
+              </li>
+            </ul>
+          </article>
+
+          <button class="btn btn--commander">Commander</button>
+        </form>
+      </section>
+
+      <footer class="footer">
         <img src="/images/logo/ohmyfood.png" alt="" />
-        <ul>
-          <li>Proposer un restaurant</li>
-          <li>Devenir partenaire</li>
+        <ul class="liste-footer">
+          <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+          <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
           <li>Mention légales</li>
           <li>contact</li>
         </ul>
       </footer>
-    </container>
+    </div>
   </body>
 </html>

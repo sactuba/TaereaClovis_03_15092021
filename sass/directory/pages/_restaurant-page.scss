@@ -1,0 +1,58 @@
+.fa-arrow-left {
+  font-size: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-menu {
+  height: 300px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.menu-main {
+  padding: 20px 10px 50px 10px;
+  background-color: $light-grey;
+  border-radius: 25px 25px 0 0;
+}
+
+.article-menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  .liste-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    .menu {
+      display: grid;
+      grid-template-areas:
+        "h4 button"
+        "p button";
+      height: 60px;
+      background-color: #fff;
+      border-radius: 15px;
+      border: none;
+      h4 {
+        grid-area: h4;
+      }
+      p {
+        font-size: 14px;
+        grid-area: p;
+        span {
+          font-weight: bold;
+        }
+      }
+      button {
+        grid-area: button;
+        justify-self: end;
+      }
+    }
+  }
+}

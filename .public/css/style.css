@@ -5,6 +5,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
 }
 
 ul {
@@ -28,15 +29,90 @@ a:active {
   text-decoration: none;
 }
 
-.btn-search {
+.btn {
   height: 45px;
   width: 185px;
-  align-self: center;
   border: none;
   border-radius: 25px;
   text-decoration: none;
+  font-weight: bold;
   color: #fff;
   background-color: #9356dc;
+}
+.btn--search {
+  align-self: center;
+}
+.btn--commander {
+  align-self: center;
+  margin: 35px 0;
+}
+
+.btn-menu {
+  width: 55px;
+  background-color: #99e2d0;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 15px 15px 0;
+}
+
+.fa-arrow-left {
+  font-size: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-menu {
+  height: 300px;
+}
+.image-menu img {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-main {
+  padding: 20px 10px 50px 10px;
+  background-color: #efefef;
+  border-radius: 25px 25px 0 0;
+}
+
+.article-menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.article-menu .liste-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.article-menu .liste-menu .menu {
+  display: grid;
+  grid-template-areas: "h4 button" "p button";
+  height: 60px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+}
+.article-menu .liste-menu .menu h4 {
+  grid-area: h4;
+}
+.article-menu .liste-menu .menu p {
+  font-size: 14px;
+  grid-area: p;
+}
+.article-menu .liste-menu .menu p span {
+  font-weight: bold;
+}
+.article-menu .liste-menu .menu button {
+  grid-area: button;
+  justify-self: end;
 }
 
 .search-restaurant {
@@ -45,7 +121,7 @@ a:active {
   flex-direction: column;
   row-gap: 20px;
   justify-content: center;
-  background-color: #f9f9f9;
+  background-color: #efefef;
 }
 .search-restaurant .localisation {
   height: 50px;
@@ -89,10 +165,10 @@ a:active {
   border-radius: 12px;
   text-align: center;
   position: relative;
-  background-color: #f9f9f9;
+  background-color: #efefef;
 }
 .restaurant {
-  background-color: #f9f9f9;
+  background-color: #efefef;
 }
 
 .liste-restaurant {
@@ -126,16 +202,21 @@ a:active {
 .header {
   width: 100%;
   display: flex;
-  flex-direction: column;
+}
+.header a {
+  margin: auto 20px;
 }
 .header .logo {
   width: 10em;
+}
+.header .logo--acceuil {
   margin: 20px auto;
-  align-self: center;
+}
+.header .logo--restaurant {
+  margin: 20px 30px 20px 30px;
 }
 
 .footer {
-  width: 100%;
   padding: 20px;
   background-color: grey;
 }
@@ -149,5 +230,10 @@ a:active {
   row-gap: 5px;
   color: #fff;
 }
+
+/* .fa-utensils,
+  .fa-hands-helping {
+    padding-right: 5px;
+  } */
 
 /*# sourceMappingURL=style.css.map */
