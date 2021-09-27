@@ -25,4 +25,21 @@
   cursor: pointer;
   border: none;
   border-radius: 0 15px 15px 0;
+  &--none:hover {
+    display: none;
+  }
 }
+
+/* .btn-menu {
+    display: none;
+    &--none:hover {
+      width: 55px;
+      background-color: $tertiary-color;
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 0 15px 15px 0;
+    }
+  } */

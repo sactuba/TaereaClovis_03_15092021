@@ -19,6 +19,12 @@ form {
   padding: 20px 10px 50px 10px;
   background-color: $light-grey;
   border-radius: 25px 25px 0 0;
+  h1 {
+    display: flex;
+    .fa-heart {
+      margin-left: auto;
+    }
+  }
 }
 
 .article-menu {
@@ -29,24 +35,31 @@ form {
   .liste-menu {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 15px;
     .menu {
       display: grid;
       grid-template-areas:
-        "h4 button"
-        "p button";
+        "h3  button"
+        "price button";
       height: 60px;
       background-color: #fff;
       border-radius: 15px;
       border: none;
-      h4 {
-        grid-area: h4;
+      h3 {
+        grid-area: h3;
       }
-      p {
-        font-size: 14px;
-        grid-area: p;
+      .menu-content {
+        display: flex;
+        justify-content: space-between;
+        grid-area: price;
+        p {
+          font-size: 13px;
+          /*  grid-area: p; */
+        }
         span {
+          /* grid-area: price; */
           font-weight: bold;
+          justify-self: end;
         }
       }
       button {

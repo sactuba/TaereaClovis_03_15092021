@@ -57,7 +57,23 @@ a:active {
   border: none;
   border-radius: 0 15px 15px 0;
 }
+.btn-menu--none:hover {
+  display: none;
+}
 
+/* .btn-menu {
+    display: none;
+    &--none:hover {
+      width: 55px;
+      background-color: $tertiary-color;
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 0 15px 15px 0;
+    }
+  } */
 .fa-arrow-left {
   font-size: 1.5em;
 }
@@ -80,6 +96,12 @@ form {
   background-color: #efefef;
   border-radius: 25px 25px 0 0;
 }
+.menu-main h1 {
+  display: flex;
+}
+.menu-main h1 .fa-heart {
+  margin-left: auto;
+}
 
 .article-menu {
   margin-top: 20px;
@@ -90,25 +112,32 @@ form {
 .article-menu .liste-menu {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 15px;
 }
 .article-menu .liste-menu .menu {
   display: grid;
-  grid-template-areas: "h4 button" "p button";
+  grid-template-areas: "h3  button" "price button";
   height: 60px;
   background-color: #fff;
   border-radius: 15px;
   border: none;
 }
-.article-menu .liste-menu .menu h4 {
-  grid-area: h4;
+.article-menu .liste-menu .menu h3 {
+  grid-area: h3;
 }
-.article-menu .liste-menu .menu p {
-  font-size: 14px;
-  grid-area: p;
+.article-menu .liste-menu .menu .menu-content {
+  display: flex;
+  justify-content: space-between;
+  grid-area: price;
 }
-.article-menu .liste-menu .menu p span {
+.article-menu .liste-menu .menu .menu-content p {
+  font-size: 13px;
+  /*  grid-area: p; */
+}
+.article-menu .liste-menu .menu .menu-content span {
+  /* grid-area: price; */
   font-weight: bold;
+  justify-self: end;
 }
 .article-menu .liste-menu .menu button {
   grid-area: button;
@@ -149,9 +178,6 @@ form {
   justify-content: center;
 }
 .fonctionnement .liste-fonctionnement li::marker {
-  width: 2rem;
-  height: 2rem;
-  /* color: #fff; */
   background: #9356dc;
 }
 .fonctionnement .liste-fonctionnement li {
@@ -161,14 +187,32 @@ form {
   text-align: center;
 }
 .fonctionnement .liste-fonctionnement li .step {
+  display: flex;
+  justify-content: center;
   height: 65px;
   border-radius: 12px;
   text-align: center;
   position: relative;
   background-color: #efefef;
 }
+.fonctionnement .liste-fonctionnement li .step .fa-store,
+.fonctionnement .liste-fonctionnement li .step .fa-list-ul,
+.fonctionnement .liste-fonctionnement li .step .fa-mobile-alt {
+  color: grey;
+  align-self: center;
+  position: absolute;
+  left: 30px;
+}
+.fonctionnement .liste-fonctionnement li .step p {
+  font-weight: bold;
+  padding-top: 25px;
+}
+
 .restaurant {
   background-color: #efefef;
+}
+.restaurant h2 {
+  padding: 40px 0 15px 18px;
 }
 
 .liste-restaurant {
@@ -176,6 +220,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  row-gap: 30px;
 }
 
 .li-restaurant {
@@ -183,9 +228,18 @@ form {
   margin-bottom: 50px;
 }
 .li-restaurant .card-restaurant {
-  height: 170px;
+  height: 150px;
   width: 100%;
   position: relative;
+}
+.li-restaurant .card-restaurant .nouveau {
+  padding: 5px 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #99e2d0;
 }
 .li-restaurant .card-restaurant img {
   height: 80%;
@@ -193,10 +247,16 @@ form {
   border-radius: 15px 15px 0 0;
 }
 .li-restaurant .card-restaurant figcaption {
-  padding: 10px;
-  height: 65px;
+  position: relative;
+  padding: 10px 10px 10px 10px;
   background-color: #fff;
   border-radius: 0 0 15px 15px;
+}
+.li-restaurant .card-restaurant figcaption .fa-heart {
+  font-size: 1.5em;
+  position: absolute;
+  right: 15px;
+  top: 35%;
 }
 
 .header {

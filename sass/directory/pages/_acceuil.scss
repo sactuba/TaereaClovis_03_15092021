@@ -24,15 +24,13 @@
 
 .fonctionnement {
   padding: 30px 10px;
+
   .liste-fonctionnement {
     display: flex;
     row-gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     li::marker {
-      width: 2rem;
-      height: 2rem;
-      /* color: #fff; */
       background: $primary-color;
     }
     li {
@@ -41,12 +39,24 @@
         text-align: center;
       }
       .step {
+        display: flex;
+        justify-content: center;
         height: 65px;
         border-radius: 12px;
         text-align: center;
         position: relative;
         background-color: $light-grey;
+        .fa-store,
+        .fa-list-ul,
+        .fa-mobile-alt {
+          color: grey;
+          align-self: center;
+          position: absolute;
+          left: 30px;
+        }
         p {
+          font-weight: bold;
+          padding-top: 25px;
         }
       }
     }
@@ -55,6 +65,9 @@
 
 .restaurant {
   background-color: $light-grey;
+  h2 {
+    padding: 40px 0 15px 18px;
+  }
 }
 
 .liste-restaurant {
@@ -62,25 +75,41 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  row-gap: 30px;
 }
 
 .li-restaurant {
   width: 90%;
   margin-bottom: 50px;
   .card-restaurant {
-    height: 170px;
+    height: 150px;
     width: 100%;
     position: relative;
+    .nouveau {
+      padding: 5px 8px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border-radius: 3px;
+      color: #fff;
+      background-color: $tertiary-color;
+    }
     img {
       height: 80%;
       width: 100%;
       border-radius: 15px 15px 0 0;
     }
     figcaption {
-      padding: 10px;
-      height: 65px;
+      position: relative;
+      padding: 10px 10px 10px 10px;
       background-color: #fff;
       border-radius: 0 0 15px 15px;
+      .fa-heart {
+        font-size: 1.5em;
+        position: absolute;
+        right: 15px;
+        top: 35%;
+      }
     }
   }
 }
