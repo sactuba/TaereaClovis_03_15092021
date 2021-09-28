@@ -16,6 +16,8 @@ form {
 }
 
 .menu-main {
+  display: flex;
+  flex-direction: column;
   padding: 20px 10px 50px 10px;
   background-color: $light-grey;
   border-radius: 25px 25px 0 0;
@@ -27,48 +29,42 @@ form {
   }
 }
 
-.article-menu {
-  margin-top: 20px;
+.article-menu ul li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  .liste-menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    .menu {
-      display: grid;
-      grid-template-areas:
-        "h3  button"
-        "price button";
-      height: 60px;
-      background-color: #fff;
-      border-radius: 15px;
-      border: none;
-      &:hover + .btn-menu {
-        display: none;
-      }
-      h3 {
-        grid-area: h3;
-      }
-      .menu-content {
-        display: flex;
-        justify-content: space-between;
-        grid-area: price;
-        p {
-          font-size: 13px;
-          /*  grid-area: p; */
-        }
-        span {
-          /* grid-area: price; */
-          font-weight: bold;
-          justify-self: end;
-        }
-      }
-      button {
-        grid-area: button;
-        justify-self: end;
-      }
+  overflow: hidden;
+  &:hover {
+    cursor: pointer;
+    button {
+      margin-right: 0;
     }
   }
+}
+
+.article-menu ul li article {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  width: 95%;
+  padding: 10px 0 10px 10px;
+}
+
+.article-menu ul li article .menu-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-content p {
+  font-size: 13px;
+}
+
+.article-menu ul li article .menu-content span {
+  padding-right: 5px;
+}
+
+.article-menu ul li button {
+  margin-right: -55px;
+  transition: all 0.4s;
 }

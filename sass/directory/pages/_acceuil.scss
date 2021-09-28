@@ -22,7 +22,7 @@
   }
 }
 
-.fonctionnement {
+/* .fonctionnement {
   padding: 30px 10px;
 
   .liste-fonctionnement {
@@ -35,9 +35,6 @@
     }
     li {
       width: 90%;
-      fieldset {
-        text-align: center;
-      }
       .step {
         display: flex;
         justify-content: center;
@@ -60,6 +57,28 @@
         }
       }
     }
+  }
+} */
+
+.fonctionnement {
+  padding: 30px 10px;
+}
+
+.liste-fonctionnement {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  li {
+    height: 60px;
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    background-color: $light-grey;
+    justify-content: center;
+    align-items: center;
   }
 }
 
