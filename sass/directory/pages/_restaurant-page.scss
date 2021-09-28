@@ -45,6 +45,9 @@ form {
       background-color: #fff;
       border-radius: 15px;
       border: none;
+      &:hover + .btn-menu {
+        display: none;
+      }
       h3 {
         grid-area: h3;
       }

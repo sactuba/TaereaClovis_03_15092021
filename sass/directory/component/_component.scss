@@ -25,14 +25,11 @@
   cursor: pointer;
   border: none;
   border-radius: 0 15px 15px 0;
-  &--none:hover {
-    display: none;
-  }
 }
 
 /* .btn-menu {
     display: none;
-    &--none:hover {
+    :hover {
       width: 55px;
       background-color: $tertiary-color;
       color: #fff;

@@ -57,13 +57,10 @@ a:active {
   border: none;
   border-radius: 0 15px 15px 0;
 }
-.btn-menu--none:hover {
-  display: none;
-}
 
 /* .btn-menu {
     display: none;
-    &--none:hover {
+    :hover {
       width: 55px;
       background-color: $tertiary-color;
       color: #fff;
@@ -121,6 +118,9 @@ form {
   background-color: #fff;
   border-radius: 15px;
   border: none;
+}
+.article-menu .liste-menu .menu:hover + .btn-menu {
+  display: none;
 }
 .article-menu .liste-menu .menu h3 {
   grid-area: h3;
