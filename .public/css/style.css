@@ -30,14 +30,14 @@ a:active {
 }
 
 .btn {
-  height: 45px;
+  padding: 15px 10px;
   width: 185px;
   border: none;
   border-radius: 25px;
   font-weight: bold;
   text-align: center;
-  color: #fff;
-  background-color: #9356dc;
+  background: linear-gradient(170deg, #ff79da, 30%, #9356dc);
+  color: #fff !important;
   align-self: center;
 }
 .btn--commander {
@@ -53,7 +53,11 @@ a:active {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.shadow, .li-restaurant .card-restaurant figcaption, .liste-fonctionnement li, .article-menu ul li {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .fa-arrow-left {
@@ -87,9 +91,16 @@ form {
   margin-left: auto;
 }
 
+.article-menu {
+  margin-top: 30px;
+}
+.article-menu .menu-titre-carte {
+  margin-bottom: 20px;
+}
+
 .article-menu ul li {
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
@@ -151,43 +162,6 @@ form {
   text-align: center;
 }
 
-/* .fonctionnement {
-  padding: 30px 10px;
-
-  .liste-fonctionnement {
-    display: flex;
-    row-gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    li::marker {
-      background: $primary-color;
-    }
-    li {
-      width: 90%;
-      .step {
-        display: flex;
-        justify-content: center;
-        height: 65px;
-        border-radius: 12px;
-        text-align: center;
-        position: relative;
-        background-color: $light-grey;
-        .fa-store,
-        .fa-list-ul,
-        .fa-mobile-alt {
-          color: grey;
-          align-self: center;
-          position: absolute;
-          left: 30px;
-        }
-        p {
-          font-weight: bold;
-          padding-top: 25px;
-        }
-      }
-    }
-  }
-} */
 .fonctionnement {
   padding: 30px 10px;
 }
@@ -198,11 +172,11 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 10px;
+  row-gap: 15px;
 }
 .liste-fonctionnement li {
   height: 60px;
-  width: 80%;
+  width: 90%;
   display: flex;
   border-radius: 10px;
   background-color: #efefef;

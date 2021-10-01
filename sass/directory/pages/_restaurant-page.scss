@@ -29,12 +29,20 @@ form {
   }
 }
 
+.article-menu {
+  margin-top: 30px;
+  .menu-titre-carte {
+    margin-bottom: 20px;
+  }
+}
+
 .article-menu ul li {
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
+  @extend .shadow;
   &:hover {
     cursor: pointer;
     button {

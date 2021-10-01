@@ -1,12 +1,12 @@
 .btn {
-  height: 45px;
+  padding: 15px 10px;
   width: 185px;
   border: none;
   border-radius: 25px;
   font-weight: bold;
   text-align: center;
-  color: #fff;
-  background-color: $primary-color;
+  background: linear-gradient(170deg, $secondary-color, 30%, $primary-color);
+  color: #fff !important;
   align-self: center;
   &--commander {
     align-self: center;
@@ -22,5 +22,5 @@
   font-size: 16px;
   cursor: pointer;
   border: none;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 10px 10px 0;
 }
