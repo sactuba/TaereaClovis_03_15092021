@@ -44,7 +44,6 @@ a:active {
   align-self: center;
   margin: 35px 0;
 }
-
 .btn-menu {
   width: 55px;
   background-color: #99e2d0;
@@ -54,6 +53,22 @@ a:active {
   cursor: pointer;
   border: none;
   border-radius: 0 10px 10px 0;
+}
+
+i.far {
+  color: #9356dc;
+}
+i.far:hover {
+  display: none;
+}
+
+i.fas {
+  display: none;
+  color: #9356dc;
+}
+i.fas:hover {
+  display: block;
+  color: #9356dc;
 }
 
 .shadow, .li-restaurant .card-restaurant figcaption, .liste-fonctionnement li, .article-menu ul li {
@@ -184,6 +199,13 @@ form {
   align-items: center;
 }
 
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+  margin-right: 20px;
+  color: #9356dc;
+}
+
 .restaurant {
   background-color: #efefef;
 }
@@ -214,7 +236,8 @@ form {
   top: 10px;
   right: 10px;
   border-radius: 3px;
-  color: #fff;
+  font-weight: bold;
+  color: #278870;
   background-color: #99e2d0;
 }
 .li-restaurant .card-restaurant img {
