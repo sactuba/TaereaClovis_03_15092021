@@ -14,7 +14,22 @@
   }
 }
 
-/* .fa-utensils,
-  .fa-hands-helping {
-    padding-right: 5px;
-  } */
+@media screen and (min-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    .footer img {
+      align-self: center;
+    }
+  }
+
+  .footer {
+    .liste-footer {
+      display: flex;
+      flex-direction: row;
+      row-gap: 5px;
+
+      color: #fff;
+    }
+  }
+}

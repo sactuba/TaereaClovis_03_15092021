@@ -104,3 +104,39 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .liste-restaurant {
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+
+  .li-restaurant {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+
+  .liste-fonctionnement {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 15px;
+    li {
+      height: 115px;
+      width: 30%;
+      display: flex;
+      border-radius: 10px;
+      background-color: $light-grey;
+      justify-content: center;
+      align-items: center;
+      @extend .shadow;
+    }
+  }
+}
