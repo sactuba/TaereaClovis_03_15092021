@@ -27,8 +27,7 @@
     .liste-footer {
       display: flex;
       flex-direction: row;
-      row-gap: 5px;
-
+      justify-content: space-around;
       color: #fff;
     }
   }

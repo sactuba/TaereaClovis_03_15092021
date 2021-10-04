@@ -1,5 +1,4 @@
 .header {
-  width: 100%;
   display: flex;
   a {
     margin: auto 20px;
@@ -11,6 +10,14 @@
     }
     &--restaurant {
       margin: 20px 30px 20px 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    &--restaurant {
+      margin: 20px auto !important;
     }
   }
 }

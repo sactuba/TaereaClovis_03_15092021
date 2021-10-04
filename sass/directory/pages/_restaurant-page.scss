@@ -30,6 +30,8 @@ form {
 }
 
 .article-menu {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   .menu-titre-carte {
     margin-bottom: 20px;
@@ -75,4 +77,29 @@ form {
 .article-menu ul li button {
   margin-right: -55px;
   transition: all 0.4s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    margin-left: 42%;
+  }
+  .article-menu {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      align-self: center;
+    }
+    .menu-titre {
+      align-self: flex-start;
+    }
+  }
+
+  .liste-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .menu {
+      width: 48%;
+    }
+  }
 }

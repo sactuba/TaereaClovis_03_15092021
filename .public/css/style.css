@@ -107,6 +107,8 @@ form {
 }
 
 .article-menu {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
 }
 .article-menu .menu-titre-carte {
@@ -153,6 +155,31 @@ form {
   transition: all 0.4s;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    margin-left: 42%;
+  }
+
+  .article-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-menu h3 {
+    align-self: center;
+  }
+  .article-menu .menu-titre {
+    align-self: flex-start;
+  }
+
+  .liste-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .liste-menu .menu {
+    width: 48%;
+  }
+}
 .search-restaurant {
   padding-bottom: 40px;
   display: flex;
@@ -178,6 +205,8 @@ form {
 }
 
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
   padding: 30px 10px;
 }
 
@@ -207,6 +236,8 @@ form {
 }
 
 .restaurant {
+  display: flex;
+  flex-direction: column;
   background-color: #efefef;
 }
 .restaurant h2 {
@@ -250,8 +281,16 @@ form {
   padding: 10px 10px 10px 10px;
   background-color: #fff;
   border-radius: 0 0 15px 15px;
+  overflow-y: hidden;
+  /*       .fas {
+    font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    bottom: -38%;
+    color: $primary-color;
+  } */
 }
-.li-restaurant .card-restaurant figcaption .fa-heart {
+.li-restaurant .card-restaurant figcaption .far {
   font-size: 1.5em;
   position: absolute;
   right: 15px;
@@ -259,6 +298,10 @@ form {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    align-self: center;
+  }
+
   .liste-restaurant {
     padding-bottom: 50px;
     display: flex;
@@ -293,7 +336,6 @@ form {
   }
 }
 .header {
-  width: 100%;
   display: flex;
 }
 .header a {
@@ -309,6 +351,11 @@ form {
   margin: 20px 30px 20px 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo--restaurant {
+    margin: 20px auto !important;
+  }
+}
 .footer {
   padding: 20px;
   background-color: grey;
@@ -336,7 +383,7 @@ form {
   .footer .liste-footer {
     display: flex;
     flex-direction: row;
-    row-gap: 5px;
+    justify-content: space-around;
     color: #fff;
   }
 }
