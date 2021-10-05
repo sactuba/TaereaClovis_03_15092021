@@ -45,7 +45,7 @@ form {
   display: flex;
   overflow: hidden;
   @extend .shadow;
-  &:hover {
+  &:active {
     cursor: pointer;
     button {
       margin-right: 0;
@@ -79,9 +79,9 @@ form {
   transition: all 0.4s;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) /* and (max-width: 1024px) */ {
   h1 {
-    margin-left: 42%;
+    margin-left: 46%;
   }
   .article-menu {
     display: flex;
@@ -99,7 +99,7 @@ form {
     justify-content: space-between;
     flex-wrap: wrap;
     .menu {
-      width: 48%;
+      width: 44%;
     }
   }
 }

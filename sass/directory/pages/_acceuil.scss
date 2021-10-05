@@ -43,6 +43,7 @@
     background-color: $light-grey;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
     @extend .shadow;
   }
 }
@@ -106,18 +107,11 @@
         right: 15px;
         top: 35%;
       }
-      /*       .fas {
-        font-size: 1.5em;
-        position: absolute;
-        right: 15px;
-        bottom: -38%;
-        color: $primary-color;
-      } */
     }
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) /* and (max-width: 1024px) */ {
   h2 {
     align-self: center;
   }
@@ -127,11 +121,11 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 30px;
-    column-gap: 20px;
+    column-gap: 65px;
   }
 
   .li-restaurant {
-    width: 45%;
+    width: 33%;
     margin-bottom: 50px;
   }
 
@@ -159,3 +153,11 @@
     }
   }
 }
+
+/* @media screen and (min-width: 1025px) {
+  .card-restaurant {
+    img {
+      height: 96%;
+    }
+  }
+} */

@@ -5,12 +5,16 @@
   border-radius: 25px;
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(170deg, $secondary-color, 30%, $primary-color);
+  background: $btn-color;
+  @extend .shadow;
   color: #fff !important;
   align-self: center;
   &--commander {
     align-self: center;
     margin: 35px 0;
+  }
+  &:hover {
+    background-color: lightness($color: #9356dc);
   }
 }
 
