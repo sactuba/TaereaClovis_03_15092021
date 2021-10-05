@@ -121,7 +121,7 @@ form {
 .article-menu ul li {
   background-color: #fff;
   margin-bottom: 17px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   overflow: hidden;
 }
@@ -165,10 +165,9 @@ form {
 
   .article-menu {
     display: flex;
-    flex-direction: column;
-  }
-  .article-menu h3 {
-    align-self: center;
+    /* h3 {
+      align-self: center;
+    } */
   }
   .article-menu .menu-titre {
     align-self: flex-start;
@@ -181,6 +180,30 @@ form {
   }
   .liste-menu .menu {
     width: 44%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-contenu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-contenu li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .liste-menu {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .liste-menu .menu {
+    width: 100%;
+  }
+
+  .article-menu {
+    width: 90%;
   }
 }
 .search-restaurant {
@@ -251,8 +274,8 @@ form {
 .liste-restaurant {
   padding-bottom: 50px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 30px;
 }
 
@@ -287,7 +310,7 @@ form {
   border-radius: 0 0 15px 15px;
   overflow-y: hidden;
 }
-.li-restaurant .card-restaurant figcaption .far {
+.li-restaurant .card-restaurant figcaption .fa-heart {
   font-size: 1.5em;
   position: absolute;
   right: 15px;
@@ -299,46 +322,48 @@ form {
     align-self: center;
   }
 
-  .liste-restaurant {
-    padding-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 30px;
-    column-gap: 65px;
+  .fonctionnement {
+    height: 200px;
   }
-
-  .li-restaurant {
-    width: 33%;
-    margin-bottom: 50px;
+  .fonctionnement h2 {
+    margin-bottom: 30px;
   }
 
   .liste-fonctionnement {
-    display: flex;
     margin-top: 10px;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    row-gap: 15px;
-    column-gap: 15px;
+    column-gap: 30px;
   }
   .liste-fonctionnement li {
-    height: 115px;
+    height: 90px;
     width: 30%;
-    display: flex;
-    border-radius: 10px;
-    background-color: #efefef;
     justify-content: center;
     align-items: center;
   }
-}
-/* @media screen and (min-width: 1025px) {
-  .card-restaurant {
-    img {
-      height: 96%;
-    }
+
+  .fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+    font-size: 1.5em;
   }
-} */
+
+  .liste-restaurant {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  .li-restaurant {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .li-restaurant {
+    width: 22%;
+  }
+}
 .header {
   display: flex;
 }

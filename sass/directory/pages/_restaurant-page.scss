@@ -41,7 +41,7 @@ form {
 .article-menu ul li {
   background-color: #fff;
   margin-bottom: 17px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   overflow: hidden;
   @extend .shadow;
@@ -85,10 +85,9 @@ form {
   }
   .article-menu {
     display: flex;
-    flex-direction: column;
-    h3 {
+    /* h3 {
       align-self: center;
-    }
+    } */
     .menu-titre {
       align-self: flex-start;
     }
@@ -101,5 +100,29 @@ form {
     .menu {
       width: 44%;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-contenu {
+    display: flex;
+    justify-content: space-around;
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .liste-menu {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .menu {
+      width: 100%;
+    }
+  }
+  .article-menu {
+    width: 90%;
   }
 }
