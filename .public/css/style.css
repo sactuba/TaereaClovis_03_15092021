@@ -59,22 +59,7 @@ a:active {
   border-radius: 0 10px 10px 0;
 }
 
-/* i.far {
-  color: $primary-color;
-  &:hover {
-    display: none;
-  }
-}
-
-i.fas {
-  display: none;
-  color: $primary-color;
-  &:hover {
-    display: block;
-    color: $primary-color;
-  }
-} */
-.shadow, .li-restaurant .card-restaurant figcaption, .liste-fonctionnement li, .article-menu ul li, .btn {
+.shadow, .li-restaurant .card-restaurant figcaption, .liste-fonctionnement li, .menu, .btn {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -116,22 +101,38 @@ form {
 }
 .article-menu .menu-titre-carte {
   margin-bottom: 20px;
+  animation: slideUp 1.5s ease-in-out forwards 0s;
 }
 
-.article-menu ul li {
+.menu {
   background-color: #fff;
   margin-bottom: 17px;
   border-radius: 15px;
   display: flex;
   overflow: hidden;
+  animation: menu-effet 1.5s ease-in-out forwards 0s;
+  /*  animation-name: menu-effet; */
 }
-.article-menu ul li:active {
+.menu:active {
   cursor: pointer;
 }
-.article-menu ul li:active button {
+.menu:active button {
   margin-right: 0;
 }
 
+@keyframes menu-effet {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .article-menu ul li article {
   display: flex;
   flex-direction: column;
@@ -316,7 +317,22 @@ form {
   right: 15px;
   top: 35%;
 }
+.li-restaurant .card-restaurant figcaption .heart {
+  color: transparent;
+}
+.li-restaurant .card-restaurant figcaption .heart:hover {
+  animation: fullHeart 1s;
+  color: #9356dc;
+}
 
+@keyframes fullHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 768px) {
   h2 {
     align-self: center;

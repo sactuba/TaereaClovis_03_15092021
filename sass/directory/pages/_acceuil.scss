@@ -101,16 +101,32 @@
       border-radius: 0 0 15px 15px;
       overflow-y: hidden;
       @extend .shadow;
+
       .fa-heart {
         font-size: 1.5em;
         position: absolute;
         right: 15px;
         top: 35%;
       }
+      .heart {
+        color: transparent;
+        &:hover {
+          animation: fullHeart 1s;
+          color: $primary-color;
+        }
+      }
     }
   }
 }
 
+@keyframes fullHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 768px) /* and (max-width: 1024px) */ {
   h2 {
     align-self: center;

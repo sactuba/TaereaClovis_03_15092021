@@ -35,21 +35,38 @@ form {
   margin-top: 30px;
   .menu-titre-carte {
     margin-bottom: 20px;
+    animation: slideUp 1.5s ease-in-out forwards 0s;
   }
 }
 
-.article-menu ul li {
+.menu {
   background-color: #fff;
   margin-bottom: 17px;
   border-radius: 15px;
   display: flex;
   overflow: hidden;
   @extend .shadow;
+  animation: menu-effet 1.5s ease-in-out forwards 0s;
+  /*  animation-name: menu-effet; */
   &:active {
     cursor: pointer;
     button {
       margin-right: 0;
     }
+  }
+}
+
+@keyframes menu-effet {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
