@@ -1,3 +1,7 @@
+.container {
+  max-width: 1920px;
+}
+
 .fa-arrow-left {
   font-size: 1.5em;
 }
@@ -8,11 +12,10 @@ form {
 }
 
 .image-menu {
+  background-image: url("/images/restaurants/La francaise.jpg");
+  object-fit: cover;
   height: 300px;
-  img {
-    height: 100%;
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .menu-main {
@@ -35,7 +38,6 @@ form {
   margin-top: 30px;
   .menu-titre-carte {
     margin-bottom: 20px;
-    animation: slideUp 1.5s ease-in-out forwards 0s;
   }
 }
 
@@ -47,9 +49,11 @@ form {
   overflow: hidden;
   @extend .shadow;
   animation: menu-effet 1.5s ease-in-out forwards 0s;
-  /*  animation-name: menu-effet; */
   &:active {
     cursor: pointer;
+    .fa-effet {
+      animation: fa-effet 800ms forwards;
+    }
     button {
       margin-right: 0;
     }
@@ -57,16 +61,10 @@ form {
 }
 
 @keyframes menu-effet {
+}
+@keyframes fa-effet {
   0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
+    transform: rotate(2turn);
   }
 }
 
@@ -78,20 +76,19 @@ form {
   padding: 10px 0 10px 10px;
 }
 
-.article-menu ul li article .menu-content {
+.menu-content {
   display: flex;
   justify-content: space-between;
+  p {
+    font-size: 13px;
+  }
+  span {
+    padding-right: 5px;
+    font-weight: bold;
+  }
 }
 
-.menu-content p {
-  font-size: 13px;
-}
-
-.article-menu ul li article .menu-content span {
-  padding-right: 5px;
-}
-
-.article-menu ul li button {
+.btn-menu {
   margin-right: -55px;
   transition: all 0.4s;
 }
@@ -102,9 +99,6 @@ form {
   }
   .article-menu {
     display: flex;
-    /* h3 {
-      align-self: center;
-    } */
     .menu-titre {
       align-self: flex-start;
     }
