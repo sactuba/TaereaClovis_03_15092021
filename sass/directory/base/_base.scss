@@ -3,13 +3,21 @@
   padding: 0;
 }
 
-body {
+* {
   font-family: "Roboto", sans-serif;
-  font-size: 0.9em;
 }
 
 ul {
   list-style-type: none;
+}
+.titre-shrikhand {
+  font-family: "Shrikhand", cursive;
+  font-size: 32px;
+}
+
+.--logo-footer {
+  padding-bottom: 16px;
+  font-size: 22px;
 }
 
 .main {
@@ -27,4 +35,9 @@ a:visited,
 a:active {
   color: #000;
   text-decoration: none;
+}
+
+.container {
+  max-width: 1920px;
+  z-index: 1;
 }

@@ -1,7 +1,3 @@
-.container {
-  max-width: 1920px;
-}
-
 .fa-arrow-left {
   font-size: 1.5em;
 }
@@ -23,11 +19,24 @@ form {
   flex-direction: column;
   padding: 20px 10px 50px 10px;
   background-color: $light-grey;
-  border-radius: 25px 25px 0 0;
+  border-radius: 30px 30px 0 0;
   h1 {
     display: flex;
-    .fa-heart {
+    /* .fa-heart {
       margin-left: auto;
+    } */
+    .fa-heart {
+      font-size: 1em;
+      position: absolute;
+      right: 15px;
+    }
+    .heart {
+      color: transparent;
+      animation-direction: alternate;
+      &:hover {
+        animation: fullHeart 1s;
+        color: $primary-color;
+      }
     }
   }
 }
@@ -36,6 +45,20 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  /*   &:hover .barre-verte {
+    width: 100%;
+  } */
+  h3 {
+    position: relative;
+    .barre-verte {
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      height: 3px;
+      width: 50px;
+      background-color: $tertiary-color;
+    }
+  }
   .menu-titre-carte {
     margin-bottom: 20px;
   }
@@ -48,6 +71,7 @@ form {
   display: flex;
   overflow: hidden;
   @extend .shadow;
+  cursor: pointer;
   animation: menu-effet 1.5s ease-in-out forwards 0s;
   &:active {
     cursor: pointer;
@@ -86,6 +110,9 @@ form {
     padding-right: 5px;
     font-weight: bold;
   }
+}
+.menu:hover {
+  scale: 1.1;
 }
 
 .btn-menu {

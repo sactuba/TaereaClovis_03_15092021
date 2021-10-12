@@ -2,10 +2,6 @@
   padding: 20px;
   background-color: grey;
 
-  img {
-    width: 100px;
-    margin-bottom: 15px;
-  }
   .liste-footer {
     display: flex;
     flex-direction: column;
@@ -14,20 +10,26 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+.fa-utensils {
+  margin-right: 15px;
+}
+
+.fa-hands-helping {
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: column;
-    .footer img {
-    }
-  }
-
-  .footer {
     .liste-footer {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       color: #fff;
     }
+  }
+  .--logo-footer {
+    text-align: center;
   }
 }
