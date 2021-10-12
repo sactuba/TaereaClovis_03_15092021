@@ -79,6 +79,9 @@
     height: 150px;
     width: 100%;
     position: relative;
+    &:hover {
+      scale: 1.1;
+    }
     .nouveau {
       padding: 5px 8px;
       position: absolute;
@@ -110,6 +113,7 @@
       }
       .heart {
         color: transparent;
+        animation-direction: alternate;
         &:hover {
           animation: fullHeart 1s;
           color: $primary-color;
@@ -144,7 +148,7 @@
     column-gap: 30px;
     li {
       height: 90px;
-      width: 30%;
+      width: 28%;
       justify-content: center;
       align-items: center;
       @extend .shadow;

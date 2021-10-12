@@ -9,12 +9,13 @@
   @extend .shadow;
   color: #fff !important;
   align-self: center;
+  &:hover {
+    scale: 1.1;
+    filter: brightness(1.1);
+  }
   &--commander {
     align-self: center;
     margin: 35px 0;
-  }
-  &:hover {
-    background-color: lightness($color: #9356dc);
   }
 }
 
