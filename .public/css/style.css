@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
+body {
+  overflow-x: hidden;
 }
 
 ul {
@@ -39,6 +40,7 @@ a:active {
 }
 
 .container {
+  min-height: 100%;
   max-width: 1920px;
   z-index: 1;
 }
@@ -108,9 +110,6 @@ form {
 }
 .menu-main h1 {
   display: flex;
-  /* .fa-heart {
-    margin-left: auto;
-  } */
 }
 .menu-main h1 .fa-heart {
   font-size: 1em;
@@ -156,7 +155,11 @@ form {
   display: flex;
   overflow: hidden;
   cursor: pointer;
-  animation: menu-effet 1.5s ease-in-out forwards 0s;
+  position: relative;
+  animation: menu-effet 1.5s ease-in-out forwards;
+}
+.menu .--delay {
+  animation-delay: 1s;
 }
 .menu:active {
   cursor: pointer;
@@ -168,7 +171,16 @@ form {
   margin-right: 0;
 }
 
-@keyframes menu-effet {}
+@keyframes menu-effet {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
 @keyframes fa-effet {
   0% {
     transform: rotate(2turn);
@@ -251,11 +263,12 @@ form {
 .load-page {
   height: 100%;
   width: 100%;
+  margin-left: 100%;
   text-align: center;
   z-index: 10;
   background-color: #fff;
   position: absolute;
-  animation: load-page 2.5s 2s ease;
+  animation: load-page 5s ease;
 }
 
 .loader {
@@ -266,7 +279,7 @@ form {
   position: relative;
   border: 4px solid #99e2d0;
   top: 45%;
-  animation: loader 1.5s ease-in-out;
+  animation: loader 2s ease-in-out;
 }
 
 .loader-inner {
@@ -280,13 +293,16 @@ form {
 
 @keyframes load-page {
   0% {
+    margin-left: 0;
     opacity: 100%;
   }
-  50% {
+  40% {
+    margin-left: 0;
+  }
+  70% {
     opacity: 100%;
   }
   100% {
-    margin-left: -100%;
     opacity: 0;
   }
 }

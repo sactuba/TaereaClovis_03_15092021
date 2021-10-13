@@ -1,11 +1,12 @@
 .load-page {
   height: 100%;
   width: 100%;
+  margin-left: 100%;
   text-align: center;
   z-index: 10;
   background-color: #fff;
   position: absolute;
-  animation: load-page 2.5s 2s ease;
+  animation: load-page 5s ease;
 }
 
 .loader {
@@ -16,7 +17,7 @@
   position: relative;
   border: 4px solid $tertiary-color;
   top: 45%;
-  animation: loader 1.5s ease-in-out;
+  animation: loader 2s ease-in-out;
 }
 
 .loader-inner {
@@ -29,13 +30,16 @@
 }
 @keyframes load-page {
   0% {
+    margin-left: 0;
     opacity: 100%;
   }
-  50% {
+  40% {
+    margin-left: 0;
+  }
+  70% {
     opacity: 100%;
   }
   100% {
-    margin-left: -100%;
     opacity: 0;
   }
 }
