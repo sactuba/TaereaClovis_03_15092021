@@ -40,7 +40,8 @@ a:active {
 }
 
 .container {
-  min-height: 100%;
+  margin: auto auto;
+  min-height: 100vh;
   max-width: 1920px;
   z-index: 1;
 }
