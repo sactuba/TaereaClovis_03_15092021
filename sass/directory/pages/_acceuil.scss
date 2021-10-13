@@ -130,7 +130,16 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    cursor: pointer;
     @extend .shadow;
+    transition: 1s;
+    &:hover {
+      background-color: $item-hover;
+      .fas {
+        transition: 1s;
+        color: $primary-color;
+      }
+    }
   }
 }
 
@@ -138,7 +147,7 @@
 .fa-list-ul,
 .fa-store {
   margin-right: 20px;
-  color: $primary-color;
+  color: $footer-color;
 }
 
 .restaurant {
@@ -199,10 +208,14 @@
       }
       .heart {
         color: transparent;
-        animation-direction: alternate;
+        /* transform: scale(0); */
         &:hover {
-          animation: fullHeart 1s;
-          color: $primary-color;
+          /*   transform: scale(1);
+          transition: transform 2s;
+          transform-origin: 0% 0%; */
+          animation: fullHeart 2s;
+          background: $btn-color;
+          -webkit-background-clip: text;
         }
       }
     }
@@ -212,9 +225,12 @@
 @keyframes fullHeart {
   0% {
     opacity: 0;
+    height: 0%;
   }
+
   100% {
     opacity: 1;
+    height: 100%;
   }
 }
 @media screen and (min-width: 768px) /* and (max-width: 1024px) */ {

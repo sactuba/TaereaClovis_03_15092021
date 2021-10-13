@@ -1,12 +1,12 @@
 .footer {
   padding: 20px;
-  background-color: grey;
+  background-color: $footer-color;
 
   .liste-footer {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    color: #fff;
+    color: #fff !important;
   }
 }
 
@@ -26,7 +26,6 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      color: #fff;
     }
   }
   .--logo-footer {

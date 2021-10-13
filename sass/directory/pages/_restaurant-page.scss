@@ -9,7 +9,7 @@ form {
 
 .image-menu {
   background-image: url("/images/restaurants/La francaise.jpg");
-  object-fit: cover;
+  background-position: center;
   height: 300px;
   width: 100%;
 }
@@ -42,11 +42,9 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  /*   &:hover .barre-verte {
-    width: 100%;
-  } */
-  h3 {
+  .menu-titre-carte {
     position: relative;
+    margin-bottom: 20px;
     .barre-verte {
       position: absolute;
       left: 0;
@@ -55,9 +53,6 @@ form {
       width: 50px;
       background-color: $tertiary-color;
     }
-  }
-  .menu-titre-carte {
-    margin-bottom: 20px;
   }
 }
 
@@ -83,6 +78,17 @@ form {
       margin-right: 0;
     }
   }
+}
+
+.menu-titre {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @keyframes menu-effet {
@@ -121,7 +127,7 @@ form {
   }
 }
 .menu:hover {
-  scale: 1.1;
+  scale: 1.04;
 }
 
 .btn-menu {
@@ -131,7 +137,7 @@ form {
 
 @media screen and (min-width: 768px) /* and (max-width: 1024px) */ {
   h1 {
-    margin-left: 46%;
+    margin-left: 43%;
   }
   .article-menu {
     display: flex;

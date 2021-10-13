@@ -53,7 +53,7 @@ a:active {
   border-radius: 25px;
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(170deg, #ff79da, 30%, #9356dc);
+  background: linear-gradient(180deg, #ff79da, 43%, #9356dc);
   color: #fff !important;
   align-self: center;
 }
@@ -97,7 +97,7 @@ form {
 
 .image-menu {
   background-image: url("/images/restaurants/La francaise.jpg");
-  object-fit: cover;
+  background-position: center;
   height: 300px;
   width: 100%;
 }
@@ -106,7 +106,7 @@ form {
   display: flex;
   flex-direction: column;
   padding: 20px 10px 50px 10px;
-  background-color: #efefef;
+  background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
 }
 .menu-main h1 {
@@ -130,23 +130,18 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  /*   &:hover .barre-verte {
-    width: 100%;
-  } */
 }
-.article-menu h3 {
+.article-menu .menu-titre-carte {
   position: relative;
+  margin-bottom: 20px;
 }
-.article-menu h3 .barre-verte {
+.article-menu .menu-titre-carte .barre-verte {
   position: absolute;
   left: 0;
   bottom: -7px;
   height: 3px;
   width: 50px;
   background-color: #99e2d0;
-}
-.article-menu .menu-titre-carte {
-  margin-bottom: 20px;
 }
 
 .menu {
@@ -170,6 +165,18 @@ form {
 }
 .menu:active button {
   margin-right: 0;
+}
+
+.menu-titre {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @keyframes menu-effet {
@@ -208,7 +215,7 @@ form {
 }
 
 .menu:hover {
-  scale: 1.1;
+  scale: 1.04;
 }
 
 .btn-menu {
@@ -218,7 +225,7 @@ form {
 
 @media screen and (min-width: 768px) {
   h1 {
-    margin-left: 46%;
+    margin-left: 43%;
   }
 
   .article-menu {
@@ -348,7 +355,7 @@ form {
   flex-direction: column;
   row-gap: 20px;
   justify-content: center;
-  background-color: #efefef;
+  background-color: #f6f6f6;
 }
 .search-restaurant .localisation {
   height: 50px;
@@ -385,23 +392,32 @@ form {
   width: 90%;
   display: flex;
   border-radius: 10px;
-  background-color: #efefef;
+  background-color: #f6f6f6;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+}
+.liste-fonctionnement li:hover {
+  background-color: #f5edff;
+}
+.liste-fonctionnement li:hover .fas {
+  transition: 1s;
+  color: #9356dc;
 }
 
 .fa-mobile-alt,
 .fa-list-ul,
 .fa-store {
   margin-right: 20px;
-  color: #9356dc;
+  color: #363636;
 }
 
 .restaurant {
   display: flex;
   flex-direction: column;
-  background-color: #efefef;
+  background-color: #f6f6f6;
 }
 .restaurant h2 {
   padding: 40px 0 15px 18px;
@@ -457,19 +473,25 @@ form {
 }
 .li-restaurant .card-restaurant figcaption .heart {
   color: transparent;
-  animation-direction: alternate;
+  /* transform: scale(0); */
 }
 .li-restaurant .card-restaurant figcaption .heart:hover {
-  animation: fullHeart 1s;
-  color: #9356dc;
+  /*   transform: scale(1);
+  transition: transform 2s;
+  transform-origin: 0% 0%; */
+  animation: fullHeart 2s;
+  background: linear-gradient(180deg, #ff79da, 43%, #9356dc);
+  -webkit-background-clip: text;
 }
 
 @keyframes fullHeart {
   0% {
     opacity: 0;
+    height: 0%;
   }
   100% {
     opacity: 1;
+    height: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -525,9 +547,6 @@ form {
 .header a {
   margin: auto 20px;
 }
-.header .logo {
-  width: 10em;
-}
 .header .logo--acceuil {
   margin: 20px auto;
 }
@@ -542,13 +561,13 @@ form {
 }
 .footer {
   padding: 20px;
-  background-color: grey;
+  background-color: #363636;
 }
 .footer .liste-footer {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-  color: #fff;
+  color: #fff !important;
 }
 
 .fa-utensils {
@@ -568,7 +587,6 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #fff;
   }
 
   .--logo-footer {
