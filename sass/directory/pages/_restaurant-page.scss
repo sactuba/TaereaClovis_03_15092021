@@ -31,10 +31,23 @@ form {
       color: transparent;
       animation-direction: alternate;
       &:hover {
-        animation: fullHeart 1s;
-        color: $primary-color;
+        animation: fullHeart 2s;
+        background: $btn-color;
+        -webkit-background-clip: text;
       }
     }
+  }
+}
+
+@keyframes fullHeart {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+
+  100% {
+    opacity: 1;
+    height: 80%;
   }
 }
 
@@ -62,7 +75,7 @@ form {
   border-radius: 15px;
   display: flex;
   overflow: hidden;
-  @extend .shadow;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   cursor: pointer;
   position: relative;
   animation: menu-effet 1.5s ease-in-out forwards;

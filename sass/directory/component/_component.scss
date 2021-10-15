@@ -1,3 +1,5 @@
+@import url(./_mixin.scss);
+
 .btn {
   padding: 15px 10px;
   width: 185px;
@@ -6,7 +8,7 @@
   font-weight: bold;
   text-align: center;
   background: $btn-color;
-  @extend .shadow;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   color: #fff !important;
   align-self: center;
   &:hover {

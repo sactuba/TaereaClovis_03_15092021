@@ -1,3 +1,5 @@
+@import url(/sass/directory/component/_mixin.scss);
+
 .load-page {
   height: 100%;
   width: 100%;
@@ -121,7 +123,9 @@
   justify-content: center;
   align-items: center;
   row-gap: 15px;
-  li {
+  counter-reset: li;
+
+  .step {
     height: 60px;
     width: 90%;
     display: flex;
@@ -131,8 +135,22 @@
     align-items: center;
     font-weight: bold;
     cursor: pointer;
-    @extend .shadow;
+    @include shadow;
     transition: 1s;
+    position: relative;
+    &::before {
+      text-align: center;
+      width: 22px;
+      height: 22px;
+      counter-increment: li;
+      content: counter(li);
+      position: absolute;
+      background-color: $primary-color;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 16px;
+      left: -10px;
+    }
     &:hover {
       background-color: $item-hover;
       .fas {
@@ -198,7 +216,8 @@
       background-color: #fff;
       border-radius: 0 0 15px 15px;
       overflow-y: hidden;
-      @extend .shadow;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
       .fa-heart {
         font-size: 1.5em;
@@ -208,11 +227,7 @@
       }
       .heart {
         color: transparent;
-        /* transform: scale(0); */
         &:hover {
-          /*   transform: scale(1);
-          transition: transform 2s;
-          transform-origin: 0% 0%; */
           animation: fullHeart 2s;
           background: $btn-color;
           -webkit-background-clip: text;
@@ -225,12 +240,11 @@
 @keyframes fullHeart {
   0% {
     opacity: 0;
-    height: 0%;
+    /*     height: 0%; */
   }
-
   100% {
     opacity: 1;
-    height: 100%;
+    height: 80%;
   }
 }
 @media screen and (min-width: 768px) /* and (max-width: 1024px) */ {
@@ -248,12 +262,13 @@
     margin-top: 10px;
     flex-direction: row;
     column-gap: 30px;
-    li {
+    .step {
       height: 90px;
       width: 28%;
       justify-content: center;
       align-items: center;
-      @extend .shadow;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
   }
 
