@@ -159,6 +159,7 @@ form {
 }
 
 .menu {
+  display: flex;
   background-color: #fff;
   margin-bottom: 17px;
   border-radius: 15px;
@@ -170,7 +171,7 @@ form {
   animation: menu-effet 1.5s ease-in-out forwards;
 }
 .menu .--delay {
-  animation-delay: 1s;
+  animation-delay: 800ms !important;
 }
 .menu:active {
   cursor: pointer;
@@ -178,7 +179,7 @@ form {
 .menu:active .fa-effet {
   animation: fa-effet 800ms forwards;
 }
-.menu:active button {
+.menu:active .btn-menu {
   margin-right: 0;
 }
 
@@ -418,6 +419,8 @@ form {
   position: relative;
 }
 .liste-fonctionnement .step::before {
+  display: flex;
+  justify-content: center;
   text-align: center;
   width: 22px;
   height: 22px;

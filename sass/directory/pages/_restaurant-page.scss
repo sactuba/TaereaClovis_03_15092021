@@ -70,6 +70,7 @@ form {
 }
 
 .menu {
+  display: flex;
   background-color: #fff;
   margin-bottom: 17px;
   border-radius: 15px;
@@ -80,14 +81,14 @@ form {
   position: relative;
   animation: menu-effet 1.5s ease-in-out forwards;
   .--delay {
-    animation-delay: 1s;
+    animation-delay: 800ms !important;
   }
   &:active {
     cursor: pointer;
     .fa-effet {
       animation: fa-effet 800ms forwards;
     }
-    button {
+    .btn-menu {
       margin-right: 0;
     }
   }
