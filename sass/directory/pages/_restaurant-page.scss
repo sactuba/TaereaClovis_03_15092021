@@ -7,21 +7,18 @@ form {
   flex-direction: column;
 }
 
-.image-menu {
-  background-image: url("/images/restaurants/La francaise.jpg");
-  background-position: center;
-  height: 300px;
-  width: 100%;
-}
-
 .menu-main {
   display: flex;
   flex-direction: column;
   padding: 20px 10px 50px 10px;
   background-color: $light-grey;
   border-radius: 30px 30px 0 0;
+
   h1 {
     display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     .fa-heart {
       font-size: 1em;
       position: absolute;
@@ -74,14 +71,12 @@ form {
   background-color: #fff;
   margin-bottom: 17px;
   border-radius: 15px;
-  display: flex;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   cursor: pointer;
   position: relative;
-  animation: menu-effet 1.5s ease-in-out forwards;
-  .--delay {
-    animation-delay: 800ms !important;
+  .btn-menu {
+    margin-right: -55px;
   }
   &:active {
     cursor: pointer;
@@ -90,8 +85,19 @@ form {
     }
     .btn-menu {
       margin-right: 0;
+      transition: 0.6s;
     }
   }
+}
+
+.--no-delay {
+  animation: menu-effet 800ms ease forwards;
+}
+.--delay {
+  animation: -delay 1000ms ease forwards;
+}
+.--delay-un {
+  animation: -delay1 1200ms ease forwards;
 }
 
 .menu-titre {
@@ -100,12 +106,33 @@ form {
   white-space: nowrap;
 }
 .menu-content p {
+  flex-direction: row;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 @keyframes menu-effet {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes -delay {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes -delay1 {
   from {
     opacity: 0;
     bottom: -50px;
@@ -127,6 +154,9 @@ form {
   margin-right: auto;
   width: 95%;
   padding: 10px 0 10px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu-content {
@@ -141,12 +171,7 @@ form {
   }
 }
 .menu:hover {
-  scale: 1.04;
-}
-
-.btn-menu {
-  margin-right: -55px;
-  transition: all 0.4s;
+  scale: 1.02;
 }
 
 @media screen and (min-width: 768px) /* and (max-width: 1024px) */ {

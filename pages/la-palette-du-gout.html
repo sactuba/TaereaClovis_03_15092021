@@ -4,108 +4,202 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
-    <title>La palette du goût</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/FontAnswome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/.public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>La palette du Goût</title>
   </head>
   <body>
-    <header>
-      <img src="/images/logo/ohmyfood.png " alt="" />
-    </header>
+    <div class="container">
+      <header class="header">
+        <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+        <p class="logo logo--restaurant titre-shrikhand">ohmyfood</p>
+      </header>
 
-    <container class="main">
-      <section class="menu-main">
-        <h1>La palette du goût</h1>
-
-        <article class="article-menu">
-          <h3></h3>
-          <ul>
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article class="article-menu">
-          <h3></h3>
-          <ul>
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article class="article-menu">
-          <h3></h3>
-          <ul>
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu">
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <button class="commander">comander</button>
+      <section class="image-menu">
+        <img src="/images/restaurants/La palette du goût.jpg" ; alt="" />
       </section>
 
-      <footer>
-        <img src="/images/logo/ohmyfood.png" alt="" />
-        <ul>
-          <li>Proposer un restaurant</li>
-          <li>Devenir partenaire</li>
-          <li>Mention légales</li>
-          <li>contact</li>
+      <section class="menu-main">
+        <h1 class="titre-shrikhand">
+          La palette du goût<i class="far fa-heart"></i
+          ><i class="fas fa-heart heart"></i>
+        </h1>
+
+        <ul class="menu-contenu">
+          <li>
+            <article class="article-menu">
+              <h3 class="menu-titre-carte">
+                ENTREES <span class="barre-verte"></span>
+              </h3>
+              <ul class="liste-menu">
+                <li class="menu --no-delay">
+                  <article>
+                    <h3 class="menu-titre">Fricassée d'escargot</h3>
+                    <div class="menu-content">
+                      <p>Au piment d'espelette</p>
+                      <span>25€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+
+                <li class="menu --delay">
+                  <article>
+                    <h3 class="menu-titre">Foie gras de cannard mi-cuit</h3>
+                    <div class="menu-content">
+                      <p>Et ses copeaux de truffe noire</p>
+                      <span>35€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu --delay-un">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+
+                <li class="menu --delay-un">
+                  <article>
+                    <h3 class="menu-titre">Oeuf au plat</h3>
+                    <div class="menu-content">
+                      <p>Assaisonné à la truffe sur lit de caviar</p>
+                      <span>20€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article class="article-menu">
+              <h3 class="menu-titre-carte">
+                PLATS<span class="barre-verte"></span>
+              </h3>
+              <ul class="liste-menu">
+                <li class="menu --no-delay">
+                  <article>
+                    <h3 class="menu-titre">Filet de boeuf aux herbes</h3>
+                    <div class="menu-content">
+                      <p>Accompagné de sa ribambelle de légumes</p>
+                      <span>40€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+
+                <li class="menu --delay">
+                  <article>
+                    <h3 class="menu-titre">Parmentier de queu de boeuf</h3>
+                    <div class="menu-content">
+                      <p>A la truffe noire sur sa purée de panais</p>
+                      <span>35€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+
+                <li class="menu --delay-un">
+                  <article>
+                    <h3 class="menu-titre">Filet de turbot</h3>
+                    <div class="menu-content">
+                      <p>Aux agrumes</p>
+                      <span>44€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article class="article-menu">
+              <h3 class="menu-titre-carte">
+                DESSERTS<span class="barre-verte"></span>
+              </h3>
+              <ul class="liste-menu">
+                <li class="menu --no-delay">
+                  <article>
+                    <h3 class="menu-titre">Paris-Brest</h3>
+                    <div class="menu-content">
+                      <p>Revisité</p>
+                      <span>18€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+
+                <li class="menu --delay">
+                  <article>
+                    <h3 class="menu-titre">Macaron au chocolat d'exception</h3>
+                    <div class="menu-content">
+                      <p>Et glace à la vanille de Madagascar</p>
+                      <span>22€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+
+                <li class="menu --delay-un">
+                  <article>
+                    <h3 class="menu-titre">Mousse au chocolat</h3>
+                    <div class="menu-content">
+                      <p>Au piment d'espelette et à la truffe noir</p>
+                      <span>23€</span>
+                    </div>
+                  </article>
+                  <button class="btn-menu">
+                    <i class="fas fa-check-circle fa-effet"></i>
+                  </button>
+                </li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+        <button class="btn btn--commander">Commander</button>
+      </section>
+
+      <footer class="footer">
+        <p class="titre-shrikhand --logo-footer">ohmyfood</p>
+        <ul class="liste-footer">
+          <li>
+            <a href="#"
+              ><i class="fas fa-utensils"></i>Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
+            >
+          </li>
+          <li><a href="#">Mention légales</a></li>
+          <li><a href="#">contact</a></li>
         </ul>
       </footer>
-    </container>
+    </div>
   </body>
 </html>

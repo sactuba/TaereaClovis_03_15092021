@@ -63,6 +63,7 @@ a:active {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   color: #fff !important;
   align-self: center;
+  overflow: hidden;
 }
 .btn:hover {
   scale: 1.1;
@@ -89,6 +90,15 @@ a:active {
     transform: rotate(2turn);
   }
 }
+.image-menu {
+  height: 300px;
+  width: 100%;
+}
+.image-menu img {
+  width: 100%;
+  height: 100%;
+}
+
 .fa-arrow-left {
   font-size: 1.5em;
 }
@@ -96,13 +106,6 @@ a:active {
 form {
   display: flex;
   flex-direction: column;
-}
-
-.image-menu {
-  background-image: url("/images/restaurants/La francaise.jpg");
-  background-position: center;
-  height: 300px;
-  width: 100%;
 }
 
 .menu-main {
@@ -114,6 +117,9 @@ form {
 }
 .menu-main h1 {
   display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-main h1 .fa-heart {
   font-size: 1em;
@@ -163,15 +169,13 @@ form {
   background-color: #fff;
   margin-bottom: 17px;
   border-radius: 15px;
-  display: flex;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   cursor: pointer;
   position: relative;
-  animation: menu-effet 1.5s ease-in-out forwards;
 }
-.menu .--delay {
-  animation-delay: 800ms !important;
+.menu .btn-menu {
+  margin-right: -55px;
 }
 .menu:active {
   cursor: pointer;
@@ -181,6 +185,19 @@ form {
 }
 .menu:active .btn-menu {
   margin-right: 0;
+  transition: 0.6s;
+}
+
+.--no-delay {
+  animation: menu-effet 800ms ease forwards;
+}
+
+.--delay {
+  animation: -delay 1000ms ease forwards;
+}
+
+.--delay-un {
+  animation: -delay1 1200ms ease forwards;
 }
 
 .menu-titre {
@@ -190,12 +207,33 @@ form {
 }
 
 .menu-content p {
+  flex-direction: row;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 @keyframes menu-effet {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes -delay {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes -delay1 {
   from {
     opacity: 0;
     bottom: -50px;
@@ -216,6 +254,9 @@ form {
   margin-right: auto;
   width: 95%;
   padding: 10px 0 10px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu-content {
@@ -231,12 +272,7 @@ form {
 }
 
 .menu:hover {
-  scale: 1.04;
-}
-
-.btn-menu {
-  margin-right: -55px;
-  transition: all 0.4s;
+  scale: 1.02;
 }
 
 @media screen and (min-width: 768px) {
@@ -475,7 +511,7 @@ form {
   position: relative;
 }
 .li-restaurant .card-restaurant:hover {
-  scale: 1.1;
+  scale: 1.01;
 }
 .li-restaurant .card-restaurant .nouveau {
   padding: 5px 8px;
