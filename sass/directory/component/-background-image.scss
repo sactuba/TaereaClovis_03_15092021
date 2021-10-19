@@ -1,9 +1,10 @@
 .image-menu {
   height: 300px;
   width: 100%;
-
   img {
     width: 100%;
-    height: 100%;
+    height: 110%;
+    position: relative;
+    z-index: 0;
   }
 }

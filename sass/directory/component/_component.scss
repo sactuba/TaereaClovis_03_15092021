@@ -12,9 +12,12 @@
   color: #fff !important;
   align-self: center;
   overflow: hidden;
+  transition: 800ms;
   &:hover {
-    scale: 1.1;
+    scale: 1.06;
     filter: brightness(1.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 12px,
+      rgba(0, 0, 0, 0.6) 0px 6px 12px;
   }
   &--commander {
     align-self: center;

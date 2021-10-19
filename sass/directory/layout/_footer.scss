@@ -6,7 +6,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    color: #fff !important;
+    li a {
+      color: #fff !important;
+    }
   }
 }
 
