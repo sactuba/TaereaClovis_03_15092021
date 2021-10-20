@@ -21,6 +21,12 @@
   }
 }
 
+@keyframes fa-effet-retour {
+  100% {
+    transform: rotate(2turn);
+  }
+}
+
 @keyframes menu-effet {
   from {
     opacity: 0;

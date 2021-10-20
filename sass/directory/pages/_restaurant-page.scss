@@ -12,9 +12,11 @@
   z-index: 100;
   h1 {
     display: flex;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
     .fa-heart {
       font-size: 1em;
       position: absolute;
@@ -56,11 +58,15 @@
   margin-bottom: 17px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  @include shadow;
   cursor: pointer;
   position: relative;
   .btn-menu {
     margin-right: -55px;
+    transition: 1.5s;
+    .fa-effet {
+      animation: fa-effet-retour 1000ms forwards;
+    }
   }
   &:hover {
     .btn-menu {

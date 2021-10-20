@@ -1,5 +1,4 @@
 @import url(./_mixin.scss);
-@import url(/sass/directory/component/_mixin.scss);
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +22,6 @@ ol {
   font-size: 32px;
 }
 
-.--logo-footer {
-  padding-bottom: 16px;
-  font-size: 22px;
-}
-
 .main {
   min-width: 320px;
   padding: 0;
@@ -47,11 +41,120 @@ a:active {
 
 .container {
   margin: auto auto;
-  min-height: 100vh;
+  min-height: 100%;
   max-width: 1920px;
+  min-width: 320px;
   z-index: 1;
 }
 
+@keyframes fa-effet {
+  0% {
+    transform: rotate(2turn);
+  }
+}
+@keyframes fullHeart {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fa-effet {
+  0% {
+    transform: rotate(2turn);
+  }
+}
+@keyframes fa-effet-retour {
+  100% {
+    transform: rotate(2turn);
+  }
+}
+@keyframes menu-effet {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes -delay {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes -delay1 {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes fullHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+}
+@keyframes load-page {
+  0% {
+    margin-left: 0;
+    opacity: 100%;
+  }
+  40% {
+    margin-left: 0;
+  }
+  70% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    rotate: 2turn;
+    height: 0;
+    left: 20%;
+  }
+  90% {
+    height: 200px;
+  }
+  50% {
+    scale: 1.8;
+  }
+  100% {
+    left: 0;
+    scale: 1;
+  }
+}
 .btn {
   padding: 15px 10px;
   width: 185px;
@@ -87,11 +190,6 @@ a:active {
   border-radius: 0 10px 10px 0;
 }
 
-@keyframes fa-effet {
-  0% {
-    transform: rotate(2turn);
-  }
-}
 .image-menu {
   height: 300px;
   width: 100%;
@@ -118,6 +216,8 @@ a:active {
 }
 .menu-main h1 {
   display: flex;
+}
+.menu-main h1 span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -137,15 +237,6 @@ a:active {
   -webkit-background-clip: text;
 }
 
-@keyframes fullHeart {
-  0% {
-    opacity: 0;
-    height: 0%;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .article-menu {
   display: flex;
   flex-direction: column;
@@ -176,12 +267,16 @@ a:active {
 }
 .menu .btn-menu {
   margin-right: -55px;
+  transition: 1.5s;
 }
-.menu:active .btn-menu {
+.menu .btn-menu .fa-effet {
+  animation: fa-effet-retour 1000ms forwards;
+}
+.menu:hover .btn-menu {
   margin-right: 0;
   transition: 0.6s;
 }
-.menu:active .btn-menu .fa-effet {
+.menu:hover .btn-menu .fa-effet {
   animation: fa-effet 900ms forwards;
 }
 
@@ -210,41 +305,6 @@ a:active {
   white-space: nowrap;
 }
 
-@keyframes fa-effet {
-  0% {
-    transform: rotate(2turn);
-  }
-}
-@keyframes menu-effet {
-  from {
-    opacity: 0;
-    bottom: -50px;
-  }
-  to {
-    opacity: 1;
-    bottom: 0;
-  }
-}
-@keyframes -delay {
-  from {
-    opacity: 0;
-    bottom: -50px;
-  }
-  to {
-    opacity: 1;
-    bottom: 0;
-  }
-}
-@keyframes -delay1 {
-  from {
-    opacity: 0;
-    bottom: -50px;
-  }
-  to {
-    opacity: 1;
-    bottom: 0;
-  }
-}
 .article-menu ul li article {
   display: flex;
   flex-direction: column;
@@ -348,56 +408,6 @@ a:active {
   animation: loader-inner 3s ease-in;
 }
 
-@keyframes load-page {
-  0% {
-    margin-left: 0;
-    opacity: 100%;
-  }
-  40% {
-    margin-left: 0;
-  }
-  70% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  0% {
-    rotate: 2turn;
-    height: 0;
-    left: 20%;
-  }
-  90% {
-    height: 200px;
-  }
-  50% {
-    scale: 1.8;
-  }
-  100% {
-    left: 0;
-    scale: 1;
-  }
-}
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-  25% {
-    height: 0%;
-  }
-  50% {
-    height: 100%;
-  }
-  75% {
-    height: 100%;
-  }
-  /* 
-  100% {
-    height: 0%;
-  } */
-}
 .search-restaurant {
   padding-bottom: 40px;
   display: flex;
@@ -548,14 +558,6 @@ a:active {
   -webkit-background-clip: text;
 }
 
-@keyframes fullHeart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @media screen and (min-width: 768px) {
   h2 {
     align-self: center;
@@ -607,6 +609,7 @@ a:active {
 .header {
   display: flex;
   position: relative;
+  background-color: #fff;
 }
 .header a {
   margin: auto 20px;
@@ -618,13 +621,6 @@ a:active {
   margin: 20px auto;
 }
 
-@media screen and (min-width: 768px) {
-  /*   .logo {
-    &--restaurant {
-      margin: 20px auto !important;
-    }
-  } */
-}
 .footer {
   padding: 20px;
   background-color: #363636;
@@ -636,6 +632,12 @@ a:active {
 }
 .footer .liste-footer li a {
   color: #fff !important;
+}
+
+.--logo-footer {
+  color: #fff;
+  padding-bottom: 16px;
+  font-size: 22px;
 }
 
 .fa-utensils {
