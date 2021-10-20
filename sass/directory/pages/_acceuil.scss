@@ -36,13 +36,6 @@
   row-gap: 20px;
   justify-content: center;
   background-color: $light-grey;
-  .localisation {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gainsboro;
-  }
   h2 {
     width: 80%;
     align-self: center;
@@ -50,6 +43,21 @@
   }
   p {
     text-align: center;
+  }
+}
+
+.localisation {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $item-hover;
+  font-weight: bold;
+  .fa-map-marker-alt {
+    margin-right: 15px;
+  }
+  span {
+    margin-left: 5px;
   }
 }
 
