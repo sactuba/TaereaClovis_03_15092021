@@ -20,11 +20,6 @@ ol {
   font-size: 32px;
 }
 
-.--logo-footer {
-  padding-bottom: 16px;
-  font-size: 22px;
-}
-
 .main {
   min-width: 320px;
   padding: 0;
@@ -44,7 +39,8 @@ a:active {
 
 .container {
   margin: auto auto;
-  min-height: 100vh;
+  min-height: 100%;
   max-width: 1920px;
+  min-width: 320px;
   z-index: 1;
 }
