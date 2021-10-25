@@ -148,7 +148,7 @@
     width: 100%;
     position: relative;
     &:hover {
-      scale: 1.01;
+      transform: scale(1.01);
     }
     .nouveau {
       padding: 5px 8px;
