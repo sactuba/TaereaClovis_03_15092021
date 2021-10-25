@@ -63,9 +63,9 @@
   .btn-menu {
     margin-right: -55px;
     transition: 1.5s;
-    .fa-effet {
-      animation: fa-effet-retour 1000ms forwards;
-    }
+    /*     .fa-effet {
+      animation: fa-effet-retour 1000ms reverse forwards;
+    } */
   }
   &:hover {
     .btn-menu {

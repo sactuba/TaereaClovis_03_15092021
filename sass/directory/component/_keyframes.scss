@@ -15,16 +15,16 @@
 }
 
 @keyframes fa-effet {
-  0% {
-    transform: rotate(2turn);
+  100% {
+    transform: rotate(1turn);
   }
 }
 
-@keyframes fa-effet-retour {
-  100% {
-    transform: rotate(2turn);
+/* @keyframes fa-effet-retour {
+  0% {
+    transform: rotate(-2turn);
   }
-}
+} */
 
 @keyframes menu-effet {
   from {

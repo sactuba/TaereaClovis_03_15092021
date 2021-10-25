@@ -44,6 +44,7 @@ a:active {
   max-width: 1920px;
   min-width: 320px;
   z-index: 1;
+  overflow: hidden;
 }
 
 @keyframes fa-effet {
@@ -60,15 +61,15 @@ a:active {
   }
 }
 @keyframes fa-effet {
-  0% {
-    transform: rotate(2turn);
-  }
-}
-@keyframes fa-effet-retour {
   100% {
-    transform: rotate(2turn);
+    transform: rotate(1turn);
   }
 }
+/* @keyframes fa-effet-retour {
+  0% {
+    transform: rotate(-2turn);
+  }
+} */
 @keyframes menu-effet {
   from {
     opacity: 0;
@@ -312,9 +313,9 @@ a:active {
 .menu .btn-menu {
   margin-right: -55px;
   transition: 1.5s;
-}
-.menu .btn-menu .fa-effet {
-  animation: fa-effet-retour 1000ms forwards;
+  /*     .fa-effet {
+    animation: fa-effet-retour 1000ms reverse forwards;
+  } */
 }
 .menu:hover .btn-menu {
   margin-right: 0;
@@ -540,7 +541,7 @@ a:active {
 .fa-mobile-alt,
 .fa-list-ul,
 .fa-store {
-  margin-right: 20px;
+  margin-right: 5px;
   color: #363636;
 }
 
@@ -630,7 +631,7 @@ a:active {
   }
   .liste-fonctionnement .step {
     height: 90px;
-    width: 28%;
+    width: 30%;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -657,6 +658,13 @@ a:active {
 @media screen and (min-width: 1024px) {
   .li-restaurant {
     width: 22%;
+  }
+}
+@media screen and (min-width: 935px) {
+  .fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+    margin-right: 20px;
   }
 }
 .header {
