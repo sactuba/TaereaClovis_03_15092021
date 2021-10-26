@@ -111,10 +111,10 @@
       background-color: $item-hover;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px,
         rgba(0, 0, 0, 0.6) 0px 16px 12px;
-      .fas {
-        transition: 1s;
-        color: $primary-color;
-      }
+    }
+    .fas:hover {
+      transition: 1s;
+      color: $primary-color;
     }
   }
 }

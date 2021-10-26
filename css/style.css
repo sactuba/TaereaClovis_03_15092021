@@ -558,7 +558,7 @@ a:active {
   background-color: #f5edff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px, rgba(0, 0, 0, 0.6) 0px 16px 12px;
 }
-.liste-fonctionnement .step:hover .fas {
+.liste-fonctionnement .step .fas:hover {
   transition: 1s;
   color: #9356dc;
 }
