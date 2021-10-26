@@ -28,6 +28,7 @@
         animation: fullHeart 2s;
         background: $btn-color;
         -webkit-background-clip: text;
+        -webkit-animation: fullHeart 2s;
       }
     }
   }
@@ -62,10 +63,8 @@
   position: relative;
   .btn-menu {
     margin-right: -55px;
+    -webkit-transition: 1.5s;
     transition: 1.5s;
-    /*     .fa-effet {
-      animation: fa-effet-retour 1000ms reverse forwards;
-    } */
   }
   &:hover {
     .btn-menu {

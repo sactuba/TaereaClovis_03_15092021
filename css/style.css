@@ -45,13 +45,30 @@ a:active {
   min-width: 320px;
   z-index: 1;
   overflow: hidden;
+  position: relative;
 }
 
+/* * {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+} */
 @keyframes fa-effet {
   0% {
     transform: rotate(2turn);
   }
 }
+/* @-webkit-keyframes fullHeart {
+  0% {
+    transform: opacity(0);
+  }
+
+  100% {
+    transform: opacity(1);
+  }
+} */
 @keyframes fullHeart {
   0% {
     opacity: 0;
@@ -122,20 +139,23 @@ a:active {
     height: 100%;
   }
 }
-@-webkit-keyframes loader-inner {
+/* @-webkit-keyframes loader-inner {
   0% {
     height: 0%;
   }
+
   25% {
     height: 0%;
   }
+
   50% {
     height: 50%;
   }
+
   75% {
     height: 100%;
   }
-}
+} */
 @keyframes load-page {
   0% {
     margin-left: 0;
@@ -149,9 +169,10 @@ a:active {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
-@-webkit-keyframes load-page {
+/* @-webkit-keyframes load-page {
   0% {
     margin-left: 0;
     opacity: 100%;
@@ -165,7 +186,7 @@ a:active {
   100% {
     opacity: 0;
   }
-}
+} */
 @keyframes loader {
   0% {
     transform: rotate(2turn);
@@ -184,12 +205,13 @@ a:active {
     height: 200px;
   }
 }
-@-webkit-keyframes loader {
+/* @-webkit-keyframes loader {
   0% {
     transform: rotate(2turn);
     height: 0;
     left: 30%;
   }
+
   90% {
     height: 200px;
   }
@@ -201,6 +223,7 @@ a:active {
     height: 200px;
   }
 }
+ */
 .btn {
   padding: 15px 10px;
   width: 185px;
@@ -280,6 +303,7 @@ a:active {
   animation: fullHeart 2s;
   background: linear-gradient(180deg, #ff79da, 43%, #9356dc);
   -webkit-background-clip: text;
+  -webkit-animation: fullHeart 2s;
 }
 
 .article-menu {
@@ -312,10 +336,8 @@ a:active {
 }
 .menu .btn-menu {
   margin-right: -55px;
+  -webkit-transition: 1.5s;
   transition: 1.5s;
-  /*     .fa-effet {
-    animation: fa-effet-retour 1000ms reverse forwards;
-  } */
 }
 .menu:hover .btn-menu {
   margin-right: 0;
@@ -430,6 +452,7 @@ a:active {
   z-index: 10;
   background-color: #fff;
   position: absolute;
+  -webkit-animation: load-page 5s ease;
   animation: load-page 5s ease;
 }
 
@@ -440,7 +463,8 @@ a:active {
   overflow: hidden;
   position: relative;
   border: 4px solid #99e2d0;
-  top: 45%;
+  top: 20%;
+  -webkit-animation: loader 2s ease-in-out;
   animation: loader 2s ease-in-out;
 }
 
@@ -450,6 +474,7 @@ a:active {
   display: inline-block;
   width: 100%;
   /* background-color: $primary-color; */
+  -webkit-animation: loader-inner 3s ease-in;
   animation: loader-inner 3s ease-in;
 }
 
